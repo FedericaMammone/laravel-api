@@ -17,8 +17,6 @@ use App\Http\Controllers\Api\ApiController;
 */
 
 Route::prefix('/v1')->group(function () {
-
-
-
-    Route::get('/project-index', [ApiController::class, 'projectIndex']);
+    Route::get('/projects', [ApiController::class, 'projectsIndex']);
+    Route::get('/projects-page', [ApiController::class, 'projectIndexPage']);
 });
